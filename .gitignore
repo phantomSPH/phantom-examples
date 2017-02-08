@@ -1,0 +1,6 @@
+*.pdf
+*.eps
+*.ev
+phantom*
+Makefile
+*_0*
