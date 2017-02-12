@@ -1,10 +1,10 @@
-# Runtime options file for Phantom, written 19/01/2017 13:57:55.4
+# Runtime options file for Phantom, written 20/01/2017 00:38:09.9
 # Options not present assume their default values
 # This file is updated automatically after a full dump
 
 # job name
-             logfile =  disc02.log    ! file to which output is directed
-            dumpfile =  disc_00100    ! dump file to start from
+             logfile =  visc02.log    ! file to which output is directed
+            dumpfile =  visc_00100    ! dump file to start from
 
 # options controlling run time and input/output
                 tmax =  628.318531    ! end time
@@ -27,7 +27,7 @@
 
 # options controlling hydrodynamics, artificial dissipation
                alpha =       0.010    ! MINIMUM art. viscosity parameter
-            alphamax =       1.000    ! MAXIMUM art. viscosity parameter
+            alphamax =       0.100    ! MAXIMUM art. viscosity parameter
                 beta =       2.000    ! beta viscosity
         avdecayconst =       0.100    ! decay time constant for viscosity switches
                 damp =       0.000    ! artificial damping of velocities (if on, v=0 initially)
@@ -40,12 +40,12 @@
       iexternalforce =           3    ! 1=star,2=coro,3=bina,4=prdr,5=toru,6=toys,7=exte,8=spir,9=Lens,10=neut,11=Eins,
    binaryreducedmass =       0.001    ! reduced mass of central binary system (if iexternalforce=binary)
           accradius1 =       0.000    ! accretion radius of primary
-          accradius2 =       0.300    ! accretion radius of secondary (if iexternalforce=binary)
+          accradius2 =       0.250    ! accretion radius of secondary (if iexternalforce=binary)
            eps_soft1 =       0.030    ! Plummer softening of primary
            eps_soft2 =       0.000    ! Plummer softening of secondary
                 ramp =           T    ! ramp up mass of secondary over first 5 orbits?
 
 # options controlling physical viscosity
-           irealvisc =           0    ! physical viscosity type (0=none,1=const,2=Shakura/Sunyaev)
-          shearparam =       0.100    ! magnitude of shear viscosity (irealvisc=1) or alpha_SS (irealvisc=2)
+           irealvisc =           1    ! physical viscosity type (0=none,1=const,2=Shakura/Sunyaev)
+          shearparam =   1.000E-05    ! magnitude of shear viscosity (irealvisc=1) or alpha_SS (irealvisc=2)
             bulkvisc =       0.000    ! magnitude of bulk viscosity
