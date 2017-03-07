@@ -1,0 +1,7 @@
+# input file for binary setup routines
+                  m1 =       0.500    ! mass of primary
+               massr =       1.000    ! mass ratio
+                   a =       1.000  ! semi-major axis (+ve) or period (-ve)
+                 ecc =       0.900    ! eccentricity
+               hacc1 =       0.100    ! primary accretion radius
+               hacc2 =       0.100    ! secondary accretion radius
