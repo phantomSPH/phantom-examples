@@ -1,5 +1,8 @@
-# PhantomSPH: (c) 2007-2017 The Authors
+# PhantomSPH: (c) 2007-2018 The Authors
 # input file for Phantom shock tube setup
+
+# shock tube name
+                name =  Brio/Wu (Ryu/Jones shock 5a)   ! 
 
 # shock tube
             densleft =       1.000    ! dens (left)
@@ -28,4 +31,3 @@
 
 # Equation-of-state properties
                gamma =       2.000    ! Adiabatic index
-               polyk =       0.100    ! square of the isothermal sound speed

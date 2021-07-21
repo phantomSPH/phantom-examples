@@ -5,6 +5,8 @@
  XORIGIN= 3*0.00000000      ,
  ITRACKTYPE=          0,
  ITRACKOFFSET=          0,
+ IDUSTFRAC_PLOT=          0,
+ IDELTAV_PLOT=          0,
  /
 &PLOTOPTS
  IPLOTLINE=F,
@@ -23,9 +25,12 @@
           12,
  USETYPEINCONTOURS=T, 11*F,
  IPLOTERRBARS=F,
- ILOCERRBARS= 64*0          ,
+ ILOCERRBARS= 512*0          ,
  HFACMARKERS=  1.00000000    ,
  ERRORBARTYPE=          0,
+ ISMOOTH_PARTICLE_PLOTS=          0,
+ RREF=  1.00000000    ,
+ BETAFLARE=  1.25000000    ,
  /
 &PAGEOPTS
  IAXIS=          0,
@@ -79,6 +84,7 @@
  XMAXPAGEMARGIN=  0.00000000    ,
  YMINPAGEMARGIN=  0.00000000    ,
  YMAXPAGEMARGIN=  0.00000000    ,
+ LINEPALETTE=          0,
  /
 &RENDEROPTS
  NPIX=          0,
@@ -103,6 +109,7 @@
  COLOURBARFMTSTR='BCMSTV    ',
  COLOURBARWIDTH=  2.00000000    ,
  ICOLOURBARPOS=          3,
+ RGBFILE='colours.ctb                                                                                                             ',
  /
 &VECTOROPTS
  NPIXVEC=         40,
@@ -161,8 +168,9 @@
  IEXACTPLOTY= 10*0          ,
  FILENAME_EXACT= 10*'                                                                                                                        ',
  MAXEXACTPTS=       1001,
- IEXACTLINECOLOUR=          2,
- IEXACTLINESTYLE=          1,
+ IEXACTLINECOLOUR=          2, 9*1          ,
+ IEXACTLINESTYLE=          1,          2,          3,          4,          5,
+           0,          1,          2,          3,          4,
  IAPPLYTRANSEXACTFILE=T,
  ICALCULATEEXACTERRORS=T,
  IPLOTRESIDUALS=F,
@@ -170,7 +178,7 @@
  RESIDUALMAX=  0.00000000    ,
  IPLOTEXACTONLYONPANEL=          0,
  IAPPLYUNITSEXACTFILE=F,
- INORMALISEERRORS=          1,
+ INORMALISEERRORS=          0,
  /
 &EXACTPARAMS
  AMPL=  4.99999989E-03,
@@ -233,24 +241,35 @@
  USE_GAMMA_EXACT=F,
  HONR=  5.00000007E-02,
  RPLANET=  1.00000000    ,
+ RELATIVISTIC=T,
+ GEODESIC_FLOW=F,
+ IS_WIND=T,
+ CONST1=  8.00000000    ,
+ CONST2=  1.00000000    ,
+ ISPIRAL=          1,
+ NARMS=          1,
+ SPIRAL_PARAMS=  0.00000000    ,  360.000000    , 6*0.00000000      ,  360.000000    , 6*0.00000000      ,
+   360.000000    , 6*0.00000000      ,  360.000000    , 6*0.00000000      ,  360.000000    , 6*0.00000000      ,
+   360.000000    , 6*0.00000000      ,  360.000000    , 6*0.00000000      ,  360.000000    , 6*0.00000000      ,
+   360.000000    , 6*0.00000000      ,  360.000000    , 5*0.00000000      ,
  /
 &MULTI
  NYPLOTMULTI=          4,
- ITRANS= 64*0          ,
- MULTIPLOTX= 64*1          ,
- MULTIPLOTY=          6,          7,         10,         14, 60*0          ,
+ ITRANS= 512*0          ,
+ MULTIPLOTX= 512*1          ,
+ MULTIPLOTY=          6,          7,         10,         14, 508*0          ,
  
- IRENDERMULTI= 64*0          ,
- IVECPLOTMULTI= 64*0          ,
- ICONTOURMULTI= 64*0          ,
- X_SECMULTI= 64*F,
- XSECPOSMULTI= 64*0.00000000      ,
- IUSEALLTYPESMULTI= 64*T,
+ IRENDERMULTI= 512*0          ,
+ IVECPLOTMULTI= 512*0          ,
+ ICONTOURMULTI= 512*0          ,
+ X_SECMULTI= 512*F,
+ XSECPOSMULTI= 512*0.00000000      ,
+ IUSEALLTYPESMULTI= 512*T,
  IPLOTPARTOFTYPEMULTI=T, 12*F,T, 12*F,T,
   12*F,T, 12*F,T, 12*F,T,
   12*F,T, 12*F,T, 12*F,T,
   12*F,T, 12*F,T, 12*F,T,
-  624*F,
+  6000*F,
  /
 &SHAPEOPTS
  NSHAPES=          0,

@@ -1,0 +1,12 @@
+# PhantomSPH: (c) 2007-2015 The Authors
+# input file for Phantom MHD linear wave test setup
+
+# MHD wave tests
+             iselect =           3    !  which wave test to run
+             rotated =           F    !  rotate wave vector?
+
+# resolution
+                  nx =         128    ! resolution (number of particles in x) for -xleft < x < xshock
+
+# Equation-of-state properties
+               gamma =  1.66666667    ! adiabatic index

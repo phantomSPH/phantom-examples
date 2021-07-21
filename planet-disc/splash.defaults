@@ -23,7 +23,7 @@
           12,
  USETYPEINCONTOURS=T, 11*F,
  IPLOTERRBARS=F,
- ILOCERRBARS= 64*0          ,
+ ILOCERRBARS= 512*0          ,
  HFACMARKERS=  1.00000000    ,
  ERRORBARTYPE=          0,
  /
@@ -124,7 +124,7 @@
  IVECLEGENDONPANEL=          0,
  /
 &XSECROTOPTS
- XSEC_NOMULTI=F,
+ XSEC_NOMULTI=T,
  XSECPOS_NOMULTI=  0.00000000    ,
  FLYTHRU=F,
  XSECLINEX1=  0.00000000    ,
@@ -236,22 +236,22 @@
  /
 &MULTI
  NYPLOTMULTI=          4,
- ITRANS= 5*0          ,          1, 5*0          , 2*1          , 51*0          ,
+ ITRANS= 5*0          ,          1, 5*0          , 2*1          , 499*0          ,
  
- MULTIPLOTX= 64*1          ,
- MULTIPLOTY=          2,          3,          4,          5, 60*0          ,
+ MULTIPLOTX= 512*1          ,
+ MULTIPLOTY=          2,          3,          4,          5, 508*0          ,
  
- IRENDERMULTI= 64*0          ,
- IVECPLOTMULTI= 64*0          ,
- ICONTOURMULTI= 64*0          ,
- X_SECMULTI= 64*F,
- XSECPOSMULTI= 64*0.00000000      ,
- IUSEALLTYPESMULTI= 64*T,
+ IRENDERMULTI= 512*0          ,
+ IVECPLOTMULTI= 512*0          ,
+ ICONTOURMULTI= 512*0          ,
+ X_SECMULTI= 512*F,
+ XSECPOSMULTI= 512*0.00000000      ,
+ IUSEALLTYPESMULTI= 512*T,
  IPLOTPARTOFTYPEMULTI=T, 12*F,T, 12*F,T,
   12*F,T, 12*F,T, 12*F,T,
   12*F,T, 12*F,T, 12*F,T,
   12*F,T, 12*F,T, 12*F,T,
-  624*F,
+  6000*F,
  /
 &SHAPEOPTS
  NSHAPES=          0,
@@ -761,4 +761,4 @@
  XMAXCOLEND=  0.00000000    ,
  XSECPOS_NOMULTI_END=  0.00000000    ,
  /
-disc_00100
+ramp_00100

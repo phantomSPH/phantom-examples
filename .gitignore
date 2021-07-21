@@ -1,6 +1,14 @@
 *.pdf
 *.eps
 *.ev
+*.log
+*.png
+*.mp4
+*.mod
+*.o
+*.discparams
+err*.txt
+.DS_Store
 phantom*
 Makefile
 *_0*

@@ -1,4 +1,4 @@
-# Runtime options file for Phantom, written 08/02/2017 19:47:01.1
+# Runtime options file for Phantom, written 08/02/2017 23:07:33.3
 # Options not present assume their default values
 # This file is updated automatically after a full dump
 
@@ -26,7 +26,7 @@
    restartonshortest =           F    ! restart with all particles on shortest timestep
 
 # options controlling hydrodynamics, artificial dissipation
-               alpha =       0.000    ! MINIMUM art. viscosity parameter
+               alpha =       1.000    ! MINIMUM art. viscosity parameter
             alphamax =       1.000    ! MAXIMUM art. viscosity parameter
               alphau =       1.000    ! art. conductivity parameter
                 beta =       2.000    ! beta viscosity

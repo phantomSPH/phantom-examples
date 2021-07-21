@@ -1,0 +1,5 @@
+0.5*(vd**2 + vg**2),vg=0.5*(1.+deltav),vd=0.5*(1.-deltav),deltav=exp(-2.*K*x),K=0.01
+0.5*(vd**2 + vg**2),vg=0.5*(1.+deltav),vd=0.5*(1.-deltav),deltav=exp(-2.*K*x),K=0.1
+0.5*(vd**2 + vg**2),vg=0.5*(1.+deltav),vd=0.5*(1.-deltav),deltav=exp(-2.*K*x),K=1.
+0.5*(vd**2 + vg**2),vg=0.5*(1.+deltav),vd=0.5*(1.-deltav),deltav=exp(-2.*K*x),K=10.
+0.5*(vd**2 + vg**2),vg=0.5*(1.+deltav),vd=0.5*(1.-deltav),deltav=exp(-2.*K*x),K=100.

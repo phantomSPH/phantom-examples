@@ -1,10 +1,10 @@
-# Runtime options file for Phantom, written 08/02/2017 22:19:37.7
+# Runtime options file for Phantom, written 13/03/2018 08:39:59.1
 # Options not present assume their default values
 # This file is updated automatically after a full dump
 
 # job name
              logfile =  briowu02.log   ! file to which output is directed
-            dumpfile =  briowu_00003   ! dump file to start from
+            dumpfile =  briowu_00010   ! dump file to start from
 
 # options controlling run time and input/output
                 tmax =       0.100    ! end time
@@ -13,11 +13,11 @@
                 nout =          -1    ! number of steps between dumps (-ve=ignore)
            nmaxdumps =          -1    ! stop after n full dumps (-ve=ignore)
             twallmax =      000:00    ! maximum wall time (hhh:mm, 000:00=ignore)
-           dtwallmax =      000:00    ! maximum wall time between full dumps (hhh:mm, 000:00=ignore)
+           dtwallmax =      000:00    ! maximum wall time between dumps (hhh:mm, 000:00=ignore)
            nfulldump =           1    ! full dump every n dumps
             iverbose =           0    ! verboseness of log (-1=quiet 0=default 1=allsteps 2=debug 5=max)
 
-# options controlling accuracy 
+# options controlling accuracy
               C_cour =       0.300    ! Courant number
              C_force =       0.250    ! dt_force number
                 tolv =   1.000E-02    ! tolerance on v iterations in timestepping
@@ -45,7 +45,7 @@
   iresistive_heating =           1    ! resistive heating (0=off, 1=on)
 
 # options controlling cooling
-            icooling =           0    ! cooling function (0=off, 1=Gammie cooling 2=SD93)
+            icooling =           0    ! cooling function (0=off, 1=Gammie cooling 2=SD93 3=cooling function)
 
 # options relating to external forces
       iexternalforce =           0    ! 1=star,2=coro,3=bina,4=prdr,5=toru,6=toys,7=exte,8=spir,9=Lens,10=neut,11=Eins,

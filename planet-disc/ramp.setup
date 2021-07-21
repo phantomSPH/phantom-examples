@@ -1,0 +1,18 @@
+# input file for gwdisc setup routines
+
+# resolution
+                  np =       100000    ! number of particles
+
+# options for binary
+             mplanet =       0.001    ! reduced mass
+          accradius1 =       0.000    ! primary accretion radius
+          accradius2 =       0.300    ! secondary accretion radius
+
+# options for accretion disc
+                R_in =       0.400    ! inner radius
+               R_out =       2.500    ! outer radius
+         HoverRinput =       0.050    ! H/R at R_in
+                sig0 =   6.366E-04    ! disc surface density
+        p_indexinput =       0.000    ! surface density profile
+        q_indexinput =       0.500    ! temperature profile
+             alphaSS =       0.010    ! desired alpha_SS

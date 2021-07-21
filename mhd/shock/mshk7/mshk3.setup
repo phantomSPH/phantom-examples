@@ -1,0 +1,30 @@
+# PhantomSPH: (c) 2007-2015 The Authors
+# input file for Phantom shock tube setup
+
+# shock tube
+            densleft =       1.080    ! dens (left)
+           densright =       1.000    ! dens (right)
+              prleft =       0.950    ! pr (left)
+             prright =       1.000    ! pr (right)
+              vxleft =       1.200    ! vx (left)
+             vxright =       0.000    ! vx (right)
+              vyleft =       0.010    ! vy (left)
+             vyright =       0.000    ! vy (right)
+              vzleft =       0.500    ! vz (left)
+             vzright =       0.000    ! vz (right)
+              Bxleft =  0.564189584  ! Bx (left)
+             Bxright =  0.564189584  ! Bx (right)
+              Byleft =  1.01554125    ! By (left)
+             Byright =  1.12837917    ! By (right)
+              Bzleft =  0.564189584  ! Bz (left)
+             Bzright =  0.564189584  ! Bz (right)
+
+# boundaries
+               xleft =      -0.500    ! x min boundary
+              xright =       0.500    ! x max boundary
+
+# resolution
+                  nx =         256    ! resolution (number of particles in x) for -xleft < x < xshock
+
+# Equation-of-state properties
+               gamma =  1.66666667    ! Adiabatic index

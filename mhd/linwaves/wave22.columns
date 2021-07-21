@@ -1,0 +1,22 @@
+        time
+        ekin
+      etherm
+        emag
+        epot
+        etot
+      totmom
+      angtot
+      rhomax
+     rhomean
+          dt
+   totentrop
+     rmsmach
+   alpha max
+  alphaB max
+    divB max
+    divB ave
+ hdivB/B max
+ hdivB/B ave
+    beta max
+    beta ave
+    beta min
